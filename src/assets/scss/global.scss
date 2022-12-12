@@ -1,0 +1,44 @@
+
+// Setup
+@import "setup/variables";
+@import "setup/mixins";
+
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/animations";
+
+// Pages
+@import "pages/robot-details";
+@import "pages/robot-edit";
+@import "pages/about";
+
+// Components
+@import "cmps/app-header";
+@import "cmps/robot-list";
+@import "cmps/robot-preview";
+@import "cmps/robot-filter";
+@import "cmps/nice-button";
+
+
+.app {
+    min-height: 100vh;
+    position: relative;
+
+    main.container {
+        padding-bottom: 150px;
+    }
+    .app-footer {
+        background-color: #222;
+        color: white;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .container {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

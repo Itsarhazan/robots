@@ -1,0 +1,30 @@
+.app-header{
+    // background-color: blue;
+    background-color: lighten(#182059, 20%);
+    color: whitesmoke ;
+    font-weight: 600;
+    section.container {
+        display: flex;
+        align-items: center;
+        
+        h3 {
+            flex-grow: 1;
+        }
+
+        .back {
+            flex-grow: 1;
+        }
+
+        nav {
+            > a {
+                color: whitesmoke;
+            }
+            a.active {
+                color: rgb(247, 44, 3);
+            }
+                > a:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
